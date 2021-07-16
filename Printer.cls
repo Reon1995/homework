@@ -6,9 +6,14 @@ public class Printer {
 
     public String textToPrint;
 
-    public Printer(String text){
+    public Printer(String text) {
         this.textToPrint = text;
     }
+    public Integer hashCode()
+    {
+    return  (221 * textToPrint.hashCode());
+}
+
     public Boolean equals(Object obj){
     if(this === obj){
         return true;
@@ -17,11 +22,23 @@ public class Printer {
         return false;
     }else{
         Printer passedPrinter = (Printer) obj;
-        if (this.textToPrint == passedPrinter.textToPrint{
+        if (this.textToPrint == passedPrinter.textToPrint {
             return true;
-        }else{
+        } else {
             return false;
-}
+        }
+        }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
